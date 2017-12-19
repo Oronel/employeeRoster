@@ -146,8 +146,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PS4-bU-i8q">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PS4-bU-i8q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="535381395.67991799">
                                                         <!--2017-12-19 13:03:15 +0000-->
                                                     </date>
@@ -218,6 +218,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="birthDatePicker" destination="PS4-bU-i8q" id="NPQ-kO-kYd"/>
                         <outlet property="dobLabel" destination="eDi-3x-Sdd" id="hKH-oX-57e"/>
                         <outlet property="employeeTypeLabel" destination="cPh-9e-v2j" id="hj4-eQ-B8k"/>
                         <outlet property="nameTextField" destination="zjD-iz-eCp" id="ZRi-HR-sx5"/>

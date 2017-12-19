@@ -18,6 +18,10 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var employeeTypeLabel: UILabel!
     
+    @IBOutlet weak var birthDatePicker: UIDatePicker!
+    
+    
+    
     var employee: Employee?
     
     override func viewDidLoad() {
@@ -25,6 +29,14 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
 
         updateView()
     }
+    
+    var isEditingBirthday : Bool = false {
+        didSet{
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
+    }
+    
     
     func updateView() {
         if let employee = employee {
